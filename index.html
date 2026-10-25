@@ -9,7 +9,7 @@
 <script>
 'use strict';
 const PUBLIC_KEY={"kty":"RSA","n":"7HO8IlQvBFsoDogVwkZjOE6oaGFzGYPsIa-3B6_Qd_8lU5Km62mR-f2wFwqkeaG1zmBmPJrPLlm4W-WSvkCQKJ8MBRoWGnKVIDT5_Y89J8VD2xjd30Mhbznbhg3-4HXUxJs4nxcV12SnfzcLkUaH-r1PhhXeeiEgNV1CK74wF5zkxd8TqzQs1FZS52xWbWMlrB71vWLosri4jOWA9X_x6H7_qeGbikqsVFPKbWDqIAFtRSFPuRABiGbqa77MYtrM5h3Xid86tvhU5fPCMUw2-8gBETylXrBDjBGiBdjoFK5ZCfd9UqYyDqOif3rDBCcE7NWZQvDPbJvc66ItrO_akQ","key_ops":["verify"],"alg":"RS256","e":"AQAB","ext":true};
-const RAW='https://raw.githubusercontent.com/yendangnguyen2001-dotcom/jar-license-control/main/licenses.dat';
+const RAW='https://raw.githubusercontent.com/yendangnguyen2001-dotcom/jar-license-control/refs/heads/main/licenses.dat';
 const API='https://api.github.com/repos/yendangnguyen2001-dotcom/jar-license-control/contents/licenses.dat';
 const el=id=>document.getElementById(id), enc=new TextEncoder(),dec=new TextDecoder(),epoch=621355968000000000n;
 let rows=[],privateKey=null,base=null,issued=0n,dirty=false,busy=false;
